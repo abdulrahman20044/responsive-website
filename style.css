@@ -1,0 +1,49 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 15px;
+}
+
+.section {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #e8f0fe;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet - 772px */
+@media screen and (min-width: 772px) {
+    .section {
+        width: 45%;
+    }
+
+    img {
+        max-height: 30vh;
+        object-fit: contain;
+    }
+}
+
+/* Large Screen - 998px */
+@media screen and (min-width: 998px) {
+    .section {
+        width: 30%;
+    }
+}
